@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="kanbna board is a tasks board that will make you finish tasks easily and arrange them" />
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Tasks Board</title>
+</head>
+
+<body>
+
+  <section class="board-container">
+
+
+
+
+    <div class="task-col">
+      <h1 class="task-head">Not Started</h1>
+      <div class="column" id="n-started">
+        <div class="task-element">
+        </div>
+      </div>
+      <button class="add" id="not-started">+ Add</button>
+    </div>
+
+    <div class="task-col">
+      <h1 class="task-head">In Progress</h1>
+      <div class="column " id="n-progress">
+      </div>
+      <button class="add" id="in-progress">+ Add</button>
+    </div>
+
+    <div class="task-col">
+      <h1 class="task-head">Completed</h1>
+      <div class="column" id="n-p">
+      </div>
+      <button class="add " id="completed">+ Add</button>
+    </div>
+  </section>
+
+  <!-- <section class="popUp">
+    <div class="pop--screen">
+      <h2 class="popUp--title">Enter Your Tasks</h2>
+      <input type="text" class="pop-inpt">
+      <button type="submit" class="save-btn">Save</button>
+    </div>
+  </section> -->
+  <script src="index.js"></script>
+</body>
+
+</html>

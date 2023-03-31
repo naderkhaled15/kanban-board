@@ -1,0 +1,179 @@
+/* 
+- FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      
+  - SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+#029f82
+#018f75
+      */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #029f82;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3.6rem;
+  height: 100vh;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.task-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30.33%;
+  padding: 2.4rem;
+}
+
+.task-head {
+  color: #fff;
+  font-size: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+
+.todos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+  align-items: center;
+  margin-bottom: 1.4rem;
+  background-color: #fff;
+  padding: 0.6rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  z-index: 999;
+  cursor: move;
+  transition: all 0.9s;
+}
+
+.column {
+  background-color: #1ba98f;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: all 0.3s;
+}
+
+.todo {
+  padding-left: 0.8rem;
+  border: none;
+  background-color: inherit;
+  margin-right: auto;
+  cursor: move;
+}
+
+.close,
+.edit,
+.check {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.check {
+  display: none;
+}
+
+.close:hover,
+.edit:hover,
+.check:hover {
+  color: #029f82;
+  background-color: #016f5b;
+}
+
+.add {
+  width: 70%;
+  margin-top: 1.2rem;
+  padding: 0.6rem;
+  border-radius: 9px;
+  border: none;
+  background-color: #018f75;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+.add:hover {
+  box-shadow: 0 0 0 0.2rem #04bd9b;
+  color: black;
+  font-weight: bold;
+}
+
+
+.action {
+  display: flex;
+}
+
+.popUp {
+  position: absolute;
+  background-color: #04bd9b;
+  padding: 3rem;
+  border-radius: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  display: none;
+}
+
+.popUp--title {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 auto 2rem;
+
+}
+
+.pop--screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-inpt {
+  margin-bottom: 1.8rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 9px;
+}
+
+.save-btn {
+  background-color: #029f82;
+  border: none;
+  color: #fff;
+  padding: 0.4rem;
+  border-radius: 9px;
+  font-size: 1.5rem;
+}
+
+.save-btn:hover {
+  background-color: #029f829b;
+}
